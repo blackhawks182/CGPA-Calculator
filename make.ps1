@@ -1,1 +1,1 @@
-gcc main.c-o calculator.exe
+gcc main.c -o calculator.exe
