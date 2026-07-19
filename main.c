@@ -19,7 +19,7 @@ int main()
         double marks;
         printf("Marks for %s: ", courses[i].name);
         scanf("%lf", &marks);
-        results[i] = createCourseResult(&courses[i], marks);
+        results[i] = createCompletedCourseResult(&courses[i], marks);
     }
 
     sortCourseResultsBySemester(results, n_courses);
