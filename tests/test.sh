@@ -1,15 +1,5 @@
-#ifndef COURSE_RESULT_H
-#define COURSE_RESULT_H
+#!/bin/sh
 
-#include "course.h"
-
-typedef struct CourseResult
-{
-    Course *course;
-    double marks;
-} CourseResult;
-
-CourseResult createCourseResult(Course *course, double marks);
-void viewCourseResult(CourseResult result);
-
-#endif
+gcc -I modules tests/test_course.c modules/course.c -o test_course.out
+chmod +x test_course.out
+./test_course.out
